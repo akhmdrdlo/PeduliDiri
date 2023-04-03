@@ -1,0 +1,9 @@
+4603|1111|Rido|2022-04-14|04:26|SMK Amnesia|36.4
+7887|1111|Rido|2022-04-14|10:39|Rumah Sakit Permata|36.7
+9155|1111|Rido|2022-04-14|11:40|SMP Fasset|36.9
+8220|12345|Akhmad|2022-04-14|08:54|Masjid Al Hidayah|36.5
+4576|12345|Akhmad|2022-04-15|11:56|Rumah Sakit Permata|36.4
+3106|Akhmad|Akhmad|2022-06-17|23:31|Perpustakaan|37
+9955|1111|Rido|2022-07-03|11:30|Mall Kalibata|36.4
+95|555555|lumilumi|2022-09-02|13:56|google|34.5
+5695|444|lumi|2023-03-10|16:26|Mall Metro|36.9
