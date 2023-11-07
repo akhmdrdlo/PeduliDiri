@@ -23,7 +23,7 @@ if($cek){
     
     echo "<script>
     alert('Pendaftaran Berhasil,Silahkan Login!!');
-    window.location.assign('../login.php');
+    window.location.assign('../index.php');
     </script>";
 }
 ?>

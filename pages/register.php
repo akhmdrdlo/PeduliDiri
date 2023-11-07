@@ -56,7 +56,7 @@
                 <div class="text-center">
                   <button type="submit" class="btn bg-gradient-warning w-100 my-4 mb-2"><i class="fa fa-user-plus"></i> | D A F T A R</button>
                 </div>
-                <p class="text-sm mt-3 mb-0 text-center">Sudah Memiliki Akun? <a href="login.php" class="text-primary font-weight-bolder">Login Yuk!!</a></p>
+                <p class="text-sm mt-3 mb-0 text-center">Sudah Memiliki Akun? <a href="index.php" class="text-primary font-weight-bolder">Login Yuk!!</a></p>
               </form>
             </div>
           </div>

@@ -12,7 +12,7 @@ if(in_array($format,$data)){
 } else {
     echo "<script>
     alert('Maaf, Data yang anda masukkan tidak valid, Silahkan coba lagi!!');
-    window.location.assign('../login.php');
+    window.location.assign('../index.php');
     </script>";
 }
 ?>

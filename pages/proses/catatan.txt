@@ -7,3 +7,7 @@
 9955|1111|Rido|2022-07-03|11:30|Mall Kalibata|36.4
 95|555555|lumilumi|2022-09-02|13:56|google|34.5
 5695|444|lumi|2023-03-10|16:26|Mall Metro|36.9
+3187|122|Ridlo|2023-04-30|10:36|Metropolitan Mall Cibubur|36.6
+466|111|andika|2023-05-10|20:14|Uber|24
+7621|500|Anemachi|2023-08-07|15:54|SEGA Game Center|36.9
+3293|1234|ridlo|2023-10-03|16:59|Metro Indah Mall|36.9
