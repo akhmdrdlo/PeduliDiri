@@ -7,7 +7,7 @@
           <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Halaman</a></li>
           <li class="breadcrumb-item text-sm text-white active" aria-current="page">Peduli Diri</li>
         </ol>
-        <h6 class="font-weight-bolder text-white mb-0">Edit Catatan Perjalanan</h6>
+        <h6 class="font-weight-bolder text-white mb-0">Tambah Catatan Perjalanan</h6>
       </nav>
       <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
         <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -30,30 +30,22 @@
           <div class="card">
             <div class="card-header pb-0">
               <div class="d-flex align-items-center">
-                <h5 class="mb-0">Ubah Data Perjalanan</h5>
+                <h5 class="mb-0">Tambah Data Perjalanan</h5>
               </div>
             </div>
-            <?php
-            $data = file("proses/catatan.txt",FILE_IGNORE_NEW_LINES);
-            $id   = $_GET['id'];
-            foreach($data as $isi){
-              $pisah = explode("|",$isi);
-              if($pisah['0']==$id){
-            ?>
             <div class="card-body">
-              <form action="proses/ubah_catatan.php" method="post">
+              <form action="proses/simpan_catatan.php" method="post">
               <div class="row">
-                <input type="hidden" name="id" value="<?= $pisah['0']?>">
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">Tanggal melakukan Check-In</label>
-                    <input class="form-control" required autocomplete="off" type="date" name="tanggal" value="<?= $pisah['3']?>">
+                    <input class="form-control" required autocomplete="off" type="date" name="tanggal">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">Jam berapa melakukan Check-In</label>
-                    <input class="form-control" required autocomplete="off" type="time" name="jam" value="<?= $pisah['4']?>">
+                    <input class="form-control" required autocomplete="off" type="time" name="jam">
                   </div>
                 </div>
               </div>
@@ -62,22 +54,21 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">Lokasi Check-In</label>
-                    <input class="form-control" required autocomplete="off" type="text" name="lokasi" placeholder="Aku di .... lalu Check In" value="<?= $pisah['5']?>">
+                    <input class="form-control" required autocomplete="off" type="text" name="lokasi" placeholder="Aku di .... lalu Check In">
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">Suhu Badan yang tertera pada saat Check-In</label>
-                    <input class="form-control" required autocomplete="off" type="text" name="suhu" placeholder="Suhu ku saat itu berapa ya..." value="<?= $pisah['6']?>">
+                    <input class="form-control" required autocomplete="off" type="text" name="suhu" placeholder="Suhu ku saat itu berapa ya...">
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <button class="form-control btn btn-md btn-warning" type="submit"><i class="fa fa-pen"></i> | UBAH DATA </button>
+                    <button class="form-control btn btn-md btn-success" type="submit"><i class="fa fa-plus"></i> | TAMBAH DATA </button>
                   </div>
                 </div>
               </div>
-              <?php }}?>
               </form>
             </div>
           </div>
@@ -113,10 +104,10 @@
   </div>
 </main>
   <!--   Core JS Files   -->
-  <script src="../assets/js/core/popper.min.js"></script>
-  <script src="../assets/js/core/bootstrap.min.js"></script>
-  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="assets/js/core/popper.min.js"></script>
+  <script src="assets/js/core/bootstrap.min.js"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -129,7 +120,7 @@
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="../assets/js/argon-dashboard.min.js?v=2.0.1"></script>
+  <script src="assets/js/argon-dashboard.min.js?v=2.0.1"></script>
 </body>
 
 </html>
